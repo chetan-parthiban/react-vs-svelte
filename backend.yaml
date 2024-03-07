@@ -1,0 +1,9 @@
+services:
+  pg:
+    image: app/pg
+    build: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - "POSTGRES_PASSWORD=password"
+      - "POSTGRES_USER=postgres"
